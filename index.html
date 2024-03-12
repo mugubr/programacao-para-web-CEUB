@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miguel Tech</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <script>
+    function onSubmit() {
+      alert("O formulário foi enviado com sucesso!");
+      document.getElementById("form").reset();
+      return false;
+    }
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <div class="icon">
+      <img src="assets/icon.png" alt="Logo">
+    </div>
+    <h1>Miguel Tech</h1>
+    <nav>
+      <ul>
+        <li><a href="#product">Produto</a></li>
+        <li><a href="#team">Equipe</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="product">
+    <h2>Produto</h2>
+    <div class="product-images">
+      <img src="assets/product_image1.jpeg" alt="Imagem do produto 1">
+      <img src="assets/product_image2.jpeg" alt="Imagem do produto 2">
+    </div>
+    <p>
+      A Miguel Tech oferece soluções inovadoras para impulsionar o crescimento empresarial. Nossa combinação de softwares
+      avançados de análise de dados e consultoria especializada proporciona às empresas as ferramentas e insights
+      necessários para alcançarem seu pleno potencial. Com uma abordagem personalizada e orientada para resultados,
+      ajudamos nossos clientes a identificar oportunidades de crescimento, otimizar processos e tomar decisões
+      estratégicas fundamentadas. Seja você uma startup ambiciosa ou uma empresa consolidada, estamos comprometidos em
+      impulsionar seu sucesso e transformar desafios em oportunidades de crescimento sustentável.
+    </p>
+  </section>
+
+  <section id="team">
+    <h2>Equipe</h2>
+    <div class="team-members">
+      <div class="team-member">
+        <img src="assets/team_member1.jpeg" alt="Foto da equipe 1">
+        <h3>Miguel Muniz</h3>
+        <p>CEO, CTO e Fundador</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/team_member2.jpeg" alt="Foto da equipe 2">
+        <h3>Jorginho</h3>
+        <p>Analista de Dados</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/team_member3.jpeg" alt="Foto da equipe 3">
+        <h3>Bruno Bezerra</h3>
+        <p>Desenvolvedor Web</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contato</h2>
+    <p>Inscreva-se para receber mais informações sobre nossos serviços:</p>
+    <form id="form" onsubmit="return onSubmit()">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="city">Cidade:</label>
+      <input type="text" id="city" name="city" required>
+      <label for="state">Estado:</label>
+      <select id="state" name="state" required>
+        <option value="" disabled selected>Selecione um estado</option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+      </select>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Miguel Tech. Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>
